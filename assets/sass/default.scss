@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Arial";
+    font-weight: 300;
+}
+
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, div, nav, button, figure, picture, form {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+.title {
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    h1,h2,h3 {
+        font-family: 'Bebas Neue';
+        color: var(--dark-blue);
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    hr {
+        width: 170px;
+        margin: 0;
+        border: 1px solid var(--gray-1);
+    }
+}
