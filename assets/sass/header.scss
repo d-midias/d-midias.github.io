@@ -25,3 +25,36 @@
 
 
 }
+@media (min-width:1200px){
+    #header {
+        height:75px;
+        .logo {
+            margin: 20px;
+            a{
+                img{
+                    width:70px;
+                }
+            }
+        }
+        .open-menu {
+            display: none;
+        }
+        .links {
+            display: flex;
+            ul {
+                margin-right: 20px;
+                width:900px;
+                justify-content: space-evenly;
+                li {
+                    margin-right: 15px;
+                    align-items: center;
+                    a {
+                        font-size:15px;
+                        text-decoration: none;
+                        color: var(--blue-header);
+                    }
+                }
+            }
+        }
+    }
+}

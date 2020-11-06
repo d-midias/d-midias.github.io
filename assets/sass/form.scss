@@ -1,0 +1,52 @@
+form {
+    flex-direction: column;
+    margin-top: 15px;
+    .field {
+        flex-direction: column-reverse;
+        input {
+            border: 1px solid var(--gray-2);
+            border-radius: var(--border-radius);
+            height: 50px;
+           
+            &:focus {
+                border: var(--blue-header);
+            }
+            &.message {
+                height:120px;
+            }
+        }
+        label {
+            color: var(--gray-1);
+            margin-bottom: 5px;
+        }
+       
+    }
+    button {
+        @include button-blue;
+        border: none;
+        align-self: center;
+        margin: 30px 0 20px 0;
+    }
+  
+}
+
+@media (min-width:1200px) {
+    form {
+        .field {
+            margin-bottom: 20px;
+            input {
+                height: 40px;
+            }
+            label {
+                font-size: 14px
+            }
+        }
+        button {
+            font-size: 24px;
+            width: 180px;
+            height: 59px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+#footer {
+    flex-direction: column;
+    background-color: var(--gray-footer);
+    margin-top: 20px;
+    margin-top:40px;
+    position: relative;
+    .links {
+        width:150px;
+        margin-top: 10px;
+        ul {
+            flex-direction: column;
+            padding-left: 20px;
+            margin-bottom: 0;
+            li {
+                margin-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    .social {
+        justify-content: center;
+        ul {
+            li {
+                a {
+                    margin-right: 15px;
+                    img {
+                        width:40px;
+                    }
+                }
+            }
+        }
+    }
+    span {
+        color: var(--white);
+        align-self: center;
+        margin-bottom: 10px; 
+    }
+    .btn-top {
+        width: 70px;
+        height: 70px;
+        background-color: var(--white);
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        right: 10px;
+        top: -32px;
+        box-shadow: var(--shadow);
+        a {
+            scroll-behavior: smooth;
+            img {
+                width: 40px;
+            }
+        }
+       
+    }
+}
+
+@media (min-width:576px) {
+    #footer {
+        .links {
+            width:100%;
+            ul {
+                width:87%;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+@media (min-width:1200px) {
+    #footer {
+        .links {
+            width:100%;
+            ul {
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+                margin-top: 10px;
+                li {
+                    margin-right: 15px;
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .social {
+            ul {
+                li {
+                    a {
+                        img {
+                            width:26px;
+                        }
+                    }
+                }
+            }
+        }
+        span {
+            font-size: 13px;
+        }
+        .btn-top {
+            width:60px;
+            height:60px;
+            top:-32px;
+            a {
+                img {
+                    width:32px;
+                }
+            }
+        }
+    }
+}

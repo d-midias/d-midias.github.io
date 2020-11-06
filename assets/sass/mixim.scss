@@ -16,3 +16,8 @@
     @include button-blue;
     background-color: var(--green);
 }
+
+@mixin button-purple {
+    @include button-blue;
+    background-color: var(--purple);
+}

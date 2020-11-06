@@ -7,45 +7,34 @@
         }
         .banner-img {
             margin-top: 20px;
+            flex-direction: column;
             picture {
                 img {
                     width:100%;
                 }
             }
-        }
-        .banner-text {
-            flex-direction: column;
-            background-color: var(--blue-4);
-            padding:30px;
-            h2 {
-                font-size:45px;
-                margin:0;
-                font-family: 'Bebas Neue';
-                color: var(--blue-2);
-            }
-            h1 {
-                font-size:24px;
-                font-family: 'Bebas Neue';
-                color: var(--gray-1);
-            }
-        }
-        a {
-            @include button-blue;
-        }
-        .circle {
-            width:100%;
-            justify-content: center;
-            >div {
-                width:20px;
-                height:20px;
-                background-color: var(--blue-5);
-                border-radius: 50%;
-                margin: 15px 10px 0 0;
-                &.selected {
-                    background-color: var(--blue-2);
+            .banner-text {
+                flex-direction: column;
+                background-color: var(--blue-4);
+                padding:30px;
+                h2 {
+                    font-size:45px;
+                    margin:0;
+                    font-family: 'Bebas Neue';
+                    color: var(--blue-2);
+                }
+                h1 {
+                    font-size:24px;
+                    font-family: 'Bebas Neue';
+                    color: var(--gray-1);
                 }
             }
+            a {
+                @include button-blue;
+            }
         }
+        
+      
     }
     #home-cards {
         flex-direction: column;
@@ -56,6 +45,470 @@
             
       
 
+        }
+    }
+    #about {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        .bg-blue {
+            width: 100%;
+            position: relative;
+            height: 500px;
+            background-color: var(--blue-2);
+        }
+        .about-card {
+            flex-direction: column;
+            margin: 15px;
+            position: absolute;
+            width: 326px;
+            left: 14px;
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            img {
+                width:300px;
+            }
+            .about-text {
+                flex-direction: column;
+                padding: 15px;
+                .title {
+                    h2 {
+                        margin-top:0;
+                    }
+                }
+                p {
+                    color: var(--gray-1);
+                    font-size:16px;
+                }
+            }
+            .btn-purple {
+                @include button-purple;
+                width: 173px;
+                height: 54px;
+                font-size: 26px;
+                align-self: center;
+            }
+        }
+    }
+    #clients {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px;
+        >div {
+            max-width: 100vw;
+            overflow: hidden;
+            .client-box {
+                flex-direction: column;
+                margin:15px;
+                .client-img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin-top: 20px;
+                    align-self: center;
+                    box-shadow: var(--shadow);
+                }
+                .evaluation {
+                    width:300px;
+                    background-color: var(--white);
+                    box-shadow: var(--shadow);
+                    margin-top: 15px;
+                    text-align: center;
+                    padding: 15px;
+                    margin-bottom: 10px;
+                    p {
+                        color: var(--gray-1);
+                    }
+                }
+            }
+        }
+    }
+    #coberturas {
+        flex-direction: column;
+        background-color: var(--blue-2);
+        align-items: center;
+        .container-img {
+            flex-direction: column;
+            margin: 20px;
+            >img {
+                width: 100%;
+                height: auto;
+                border-radius: var(--border-radius)
+            }
+            .img-row {
+                justify-content: space-between;
+                img{
+                width: 160px;
+                height: 190px;
+                border-radius: var(--border-radius);
+                margin-top: 15px;
+                }
+               
+            }
+        }
+        .cobertura-card {
+            flex-direction: column;
+            width: 315px;
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            .cobertura-text {
+                flex-direction: column;
+                .title {
+                    h2 {
+                        margin-top:10px;
+                    }
+                }
+                p {
+                    padding: 20px;
+                    padding-top: 0;
+                    color: var(--gray-1);
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .btn-purple {
+            @include button-purple;
+            width: 170px;
+            height: 55px;
+            align-self: center;
+            font-size: 24px;
+            margin-bottom: 15px
+
+        }
+    }
+}
+
+@media (min-width:576px) {
+    #home {
+        #banner {
+            .banner-img {
+                position:relative;
+                .banner-text{
+                    position: absolute;
+                    background-color: initial;
+                    width: 43%;
+                    a{
+                        font-size: 24px;
+                        width: 150px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+        #home-cards {
+            .container-card {
+                flex-direction: row;
+                margin-top:0;
+                .card {
+                    .text-card {
+                        .title {
+                            hr {
+                                width:80px;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .title {
+                            hr {
+                                width: 120px;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #about {
+            .bg-blue {
+                height: 350px;
+            }
+            .about-card {
+                width:700px;
+                flex-direction: row;
+                img {
+                    width:400px;
+                }
+                .about-text {
+                    background-color: var(--white);
+                    .title {
+                        h2 {
+                            font-size:24px;
+                        }
+                        hr {
+                            width:80px;
+                        }
+                    }
+                    p {
+                        padding:10px;
+                    }
+                    a {
+                        font-size: 19px;
+                        width: 120px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        #clients {
+            >div {
+                .client-box {
+                    .evaluation {
+                        height: 140px;
+                        p {
+                            font-size:13px;
+                        }
+                    }
+                }
+            }
+        }
+        #coberturas {
+            flex-direction: row-reverse;
+            .container-img {
+                img {
+                    width: 350px;
+                }
+            }
+            .container-cobertura {
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                .cobertura-card {
+                    width: 280px;
+                    .cobertura-text {
+                        .title {
+                            h2 {
+                                font-size: 24px;
+                            }
+                            hr {
+                                width:120px
+                            }
+                            p {
+                                font-size: 16px;
+                                padding: 0 50px;
+                                line-height: 25px;
+                            }
+                        }
+                        .btn-purple {
+                            font-size: 21px;
+                            margin-top: 15px;
+                            width: 150px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    #home {
+        #banner {
+            flex-direction: row;
+            padding:15px;
+            .arrow-left, .arrow-right {
+                display: flex;
+                img {
+                    width: 45px;
+                }
+            }
+            .circle {
+                display: none;
+            }
+            .banner-img {
+                position: relative;
+                padding: 20px;
+                margin-top:0;
+                .banner-text {
+                    position: absolute;
+                    background-color: initial;
+                    width:50%;
+                    margin-left:20px;
+                    margin-top:25px;
+                    h2 {
+                        font-size:75px;
+                    }
+                    h1 {
+                        font-size:38px;
+                        margin-top:0;
+                    }
+                    a {
+                        width:170px;
+                        height:57px;
+                        font-size:25px;
+                        margin-top:15px;
+                    }
+                }
+            }
+        }
+        #home-cards {
+            .title {
+                h2 {
+                    font-size:30px;
+                }
+            }
+            .container-card {
+                flex-direction: row;
+                justify-content: center;
+                padding: 0 40px;
+                .card {
+                    margin: 20px;
+                    width:250px;
+                    .img-card {
+                        height:200px;
+                        img {
+                            height: 200px;
+                        }
+                    }
+                    .text-card {
+                        .title {
+                            h3 {
+                                font-size:24px;
+                            }
+                        }
+                        .btn-green {
+                            margin:0;
+                            margin-top:10px;
+                        }
+                    }
+                    &:hover {
+                        .title {
+                            hr {
+                                width: 120px;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+        }
+        #about {
+            margin-top: 45px;
+            .bg-blue {
+                height:420px;
+               
+            }
+            .about-card {
+                flex-direction: row;
+                width:80%;
+                height: 450px;
+                margin-left: 115px;
+                img {
+                    width:600px;
+                }
+                .about-text {
+                    flex-direction: column;
+                    margin-left: 20px;
+                   
+                    p {
+                        font-size: 16px;
+                        padding: 10px 40px 10px 40px;
+                        line-height: 24px;
+                    }
+                    .title {
+                        h2 {
+                            font-size: 30px;
+                        }
+                        hr {
+                            width:70px;
+                        }
+                    }
+                    a {
+                        width: 150px;
+                        height:45px;
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+        #clients {
+            margin-top: 10px;
+            .title {
+                margin-bottom: 10px;
+                h2 {
+                    font-size:30px;
+                }
+            }
+            >div {
+                justify-content: center;
+                .client-box {
+
+                    .client-img {
+                        width: 70px;
+                        height: 70px;
+                    }
+                    .evaluation {
+                        margin: 10px;
+                        height: 110px;
+                        align-items: center;
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            
+            .circle {
+                display: none;
+            }
+        }
+        #coberturas {
+            flex-direction: row-reverse;
+            margin-top:20px;
+            .container-img {
+                flex-direction: row-reverse;
+                img {
+                    width: 535px;
+                    height: 451px;
+                }
+                .img-row {
+                    flex-direction: column;
+                    margin-right: 10px;
+                    img {
+                        width: 188px;
+                        height: 216px;
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .container-cobertura {
+                width: 45%;
+                align-items: center;
+                justify-content: center;
+                .cobertura-card{
+                    height: 313px;
+                    width: 290px;
+                    justify-content: space-around;
+                    margin-bottom: 0;
+                    .cobertura-text { 
+                        .title {
+                            h2 {
+                                font-size:30px;
+                            }
+                        }
+                        p{
+                        font-size: 15px;
+                        padding: 0 30px 0 30px;
+                        }
+                    }
+                }
+            }
+            .btn-purple {
+                font-size: 20px;
+                width:135px;
+                height: 47px;
+               
+            }
         }
     }
 }

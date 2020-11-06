@@ -1,0 +1,121 @@
+.page-form {
+    position: relative;
+    height: 1365px;
+    margin-top:20px;
+    .bg-blue {
+        background-color: var(--dark-blue);
+        align-items: flex-end;
+        margin-top:50px;
+        .contact-text {
+            flex-direction: column;
+            padding:20px;
+            > div {
+                flex-direction: column;
+                h2 {
+                    color: var(--white);
+                    font-family: 'Bebas Neue';
+                    font-size: 34px;
+                    margin-bottom: 5px;
+                }
+                span {
+                    color: var(--white);
+                    font-size: 24px;
+                    a {
+                        color:var(--white);
+                    }
+                }
+                img {
+                    width:100%;
+                    border:var(--border-radius);
+                }
+            }
+           
+        }
+    }
+    .form-container {
+        position: absolute;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 15px;
+        margin: 20px;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+        .title {
+            align-items: flex-start;
+            span {
+                color: var(--gray-1);
+                margin-top: 15px;
+                font-size: 19px;
+            }
+        }
+       
+    }
+}
+
+@media (min-width:576px) {
+    .page-form {
+        width:100%;
+        height:885px;
+        .bg-blue {
+            width:100vw;
+            .contact-text {
+                flex-direction: row;
+                flex-wrap: wrap;
+                >div {
+                    flex-direction: column;
+                    margin-right:30px;
+                    span {
+                        font-size:18px;
+        
+                    }
+                    h2 {
+                        font-size:24px;
+                    }
+                    img {
+                        width:180px;
+                        height:125px;
+                    }
+                }
+              
+            }
+           
+        }
+        .form-container {
+            width:87%;
+            margin-left:6.5vw;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .page-form {
+        margin-bottom:30px;
+        height:596px;
+        .bg-blue{
+            align-items: initial;
+            justify-content: flex-end;
+            .contact-text {
+                flex-direction: column;
+                width:50%;
+                justify-content: space-between;
+                >div {
+                    span {
+                        margin-bottom:10px;
+                    }
+                    img {
+                        width:300px;
+                    }
+                }
+            }
+        }
+        .form-container {
+            width:35%;
+            padding:30px;
+            .title {
+                span {
+                    font-size: 16px
+                }
+            }
+        }
+    }
+}
