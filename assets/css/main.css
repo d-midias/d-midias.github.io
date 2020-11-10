@@ -1219,7 +1219,7 @@ body {
   }
   .page-form .form-container {
     width: 87%;
-    margin-left: 6.5vw;
+    margin-left: calc(100vw - 90%);
   }
 }
 @media (min-width: 1200px) {
@@ -1305,6 +1305,207 @@ form button {
     height: 59px;
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+}
+#payment-page .page-form {
+  flex-direction: column;
+  height: initial;
+  margin-bottom: 70px;
+}
+#payment-page .page-form .bg-blue {
+  height: 645px;
+  width: 100vw;
+}
+#payment-page .page-form .bg-blue .img-pay {
+  display: none;
+}
+#payment-page .page-form .form-container {
+  width: calc(100vw - 11%);
+}
+#payment-page .page-form .form-container .title h1 {
+  margin-top: 0;
+}
+#payment-page .page-form .form-container .title .subtitle {
+  font-family: "bebas neue";
+  font-size: 21px;
+}
+#payment-page .page-form .form-container .title span.price {
+  font-family: "Bebas Neue";
+  color: var(--dark-blue);
+  font-size: 27px;
+}
+#payment-page .page-form .form-container form .field {
+  margin-bottom: 10px;
+}
+#payment-page .page-form .form-container form .field select {
+  height: 40px;
+}
+#payment-page .page-form .form-container form .fields {
+  justify-content: space-between;
+}
+#payment-page .page-form .form-container form .fields .field {
+  width: 140px;
+  margin-bottom: 10px;
+}
+#payment-page .page-form .form-container form button {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--blue-1);
+  width: 200px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-family: "Bebas Neue";
+  display: flex;
+  border-radius: var(--border-radius);
+  background-color: var(--green);
+}
+
+@media (min-width: 576px) {
+  #payment-page .page-form .form-container {
+    width: calc(100vw - 20%);
+  }
+  #payment-page .page-form .form-container form .fields .field {
+    width: 240px;
+  }
+}
+@media (min-width: 1200px) {
+  #payment-page .page-form {
+    height: 650px;
+  }
+  #payment-page .page-form .bg-blue {
+    height: 580px;
+  }
+  #payment-page .page-form .bg-blue .img-pay {
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+  }
+  #payment-page .page-form .bg-blue .img-pay img {
+    width: 550px;
+    height: 490px;
+    border-radius: var(--border-radius);
+  }
+  #payment-page .page-form .form-container {
+    width: calc(100vw - 60%);
+  }
+  #payment-page .page-form .form-container .title h1 {
+    margin-top: 0;
+  }
+  #payment-page .page-form .form-container .title .subtitle {
+    font-family: "bebas neue";
+    font-size: 21px;
+  }
+  #payment-page .page-form .form-container .title span.price {
+    font-family: "Bebas Neue";
+    color: var(--dark-blue);
+    font-size: 27px;
+  }
+  #payment-page .page-form .form-container form .fields {
+    justify-content: space-between;
+  }
+  #payment-page .page-form .form-container form button {
+    width: 155px;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+#about-page .about-card {
+  width: 100vw;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+#about-page .about-card .img-container {
+  flex-direction: column;
+}
+#about-page .about-card .img-container img {
+  width: 100%;
+}
+#about-page .about-card .img-container .img-row {
+  display: none;
+}
+#about-page .about-card .about-text {
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-top: 35px;
+}
+#about-page .about-card .about-text .title h1 {
+  margin-top: 15px;
+}
+#about-page .about-card .about-text .text {
+  flex-direction: column;
+  padding: 25px;
+}
+#about-page .about-card .about-text .text p {
+  margin: 0;
+  color: var(--gray-1);
+  line-height: 20px;
+}
+
+@media (min-width: 576px) {
+  #about-page .about-card .about-text .text p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #about-page {
+    align-items: center;
+    justify-content: center;
+  }
+  #about-page .about-card {
+    flex-direction: row;
+    width: 80vw;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 40px;
+  }
+  #about-page .about-card .img-container {
+    width: 60%;
+  }
+  #about-page .about-card .img-container img {
+    width: 600px;
+    border-radius: var(--border-radius);
+  }
+  #about-page .about-card .img-container .img-row {
+    display: flex;
+    margin-top: 10px;
+  }
+  #about-page .about-card .img-container .img-row img {
+    width: 391px;
+    border-radius: var(--border-radius);
+  }
+  #about-page .about-card .img-container .img-row .img-column {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  #about-page .about-card .img-container .img-row .img-column img {
+    width: 200px;
+    border-radius: var(--border-radius);
+  }
+  #about-page .about-card .circle {
+    display: none;
+  }
+  #about-page .about-card .about-text {
+    background-color: unset;
+    border-radius: initial;
+    box-shadow: initial;
+    margin-top: 0;
+    width: 35%;
+  }
+  #about-page .about-card .about-text .text {
+    padding: 10px 43px;
+    text-align: justify;
+  }
+  #about-page .about-card .about-text .text p {
+    line-height: 24px;
   }
 }
 

@@ -82,7 +82,7 @@
         }
         .form-container {
             width:87%;
-            margin-left:6.5vw;
+            margin-left: calc(100vw - 90%);
         }
     }
 }

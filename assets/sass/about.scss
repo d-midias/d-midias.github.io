@@ -1,0 +1,110 @@
+#about-page {
+    .about-card {
+        width: 100vw;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 15px;
+        margin-bottom: 30px;
+        .img-container {
+            flex-direction: column;
+            img {
+                width:100%;
+            }
+            .img-row {
+                display:none;
+            }
+        }
+        .about-text {
+            flex-direction: column;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-top: 35px;
+            .title {
+                h1 {
+                    margin-top: 15px;
+                }
+            }
+            .text {
+                flex-direction: column;
+                padding: 25px;
+                p {
+                    margin:0;
+                    color:var(--gray-1);
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:576px) {
+    #about-page {
+        .about-card {
+            .about-text {
+                .text {
+                    p {
+                        font-size:17px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    #about-page {
+        align-items: center;
+        justify-content: center;
+        .about-card {
+            flex-direction: row;
+            width: 80vw;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-top: 40px;
+            .img-container {
+                width: 60%;
+                img {
+                    width:600px;
+                    border-radius: var(--border-radius);
+                }
+                .img-row {
+                    display: flex;
+                    margin-top:10px;
+                    img{
+                        width:391px;
+                        border-radius: var(--border-radius);
+                    }
+                    .img-column {
+                        flex-direction: column;
+                        margin-right:10px;
+                        img {
+                            width:200px; 
+                            border-radius:var(--border-radius);
+                        }
+                       
+                    }
+                }
+            }
+            .circle {
+                display:none;
+            }
+            .about-text {
+                background-color: unset;
+                border-radius: initial;
+                box-shadow: initial;
+                margin-top: 0;
+                width:35%;
+                .text {
+                    padding: 10px 43px;
+                    text-align: justify;
+                    p {
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
