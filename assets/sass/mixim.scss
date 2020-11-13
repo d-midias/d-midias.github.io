@@ -10,14 +10,33 @@
     font-family: 'Bebas Neue';
     display: flex;
     border-radius: var(--border-radius);
+    &:hover {
+        background-color: var(--blue-hover);
+    }
+    &:active {
+        background-color: var(--blue-active);
+    }
+  
 }
 
 @mixin button-green {
     @include button-blue;
     background-color: var(--green);
+    &:hover {
+        background-color: var(--green-hover);
+    }
+    &:active {
+        background-color: var(--green-active);
+    }
 }
 
 @mixin button-purple {
     @include button-blue;
     background-color: var(--purple);
+    &:hover {
+        background-color: var(--purple-hover);
+    }
+    &:active {
+        background-color: var(--purple-active);
+    }
 }

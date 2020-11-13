@@ -7,10 +7,12 @@ form {
             border: 1px solid var(--gray-2);
             border-radius: var(--border-radius);
             height: 50px;
-           
             &:focus {
-                border: var(--blue-header);
+                border-color: var(--blue-2);
+                transition: .7s;
             }
+           
+         
             &.message {
                 height:120px;
             }

@@ -80,9 +80,11 @@
                     .img-column {
                         flex-direction: column;
                         margin-right:10px;
+                        justify-content: space-between;
                         img {
                             width:200px; 
                             border-radius:var(--border-radius);
+                            height: 126px;
                         }
                        
                     }

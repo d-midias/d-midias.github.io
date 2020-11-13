@@ -74,6 +74,7 @@
         height: 650px;
         .bg-blue {
             height: 580px;
+            width: 100%;
             .img-pay {
                 display: flex;
                 width:50vw;
@@ -88,6 +89,7 @@
         }
         .form-container {
             width: calc(100vw - 60%);
+            margin-left: calc(100vw - 94%);
             .title {
                 h1 {
                     margin-top:0;

@@ -15,7 +15,6 @@
             }
             .banner-text {
                 flex-direction: column;
-                background-color: var(--blue-4);
                 padding:30px;
                 h2 {
                     font-size:45px;
@@ -60,10 +59,8 @@
         }
         .about-card {
             flex-direction: column;
-            margin: 15px;
             position: absolute;
             width: 326px;
-            left: 14px;
             padding: 20px;
             background-color: var(--white);
             border-radius: var(--border-radius);
@@ -257,7 +254,9 @@
         }
         #clients {
             >div {
+              
                 .client-box {
+                   
                     .evaluation {
                         height: 140px;
                         p {
@@ -265,6 +264,9 @@
                         }
                     }
                 }
+            }
+            .circle {
+                display:none;
             }
         }
         #coberturas {
@@ -308,6 +310,38 @@
     }
 }
 
+@media (min-width:992px) {
+    #home {
+        #banner {
+            .banner-img {
+                .banner-text {
+                    h2 {
+                        font-size:54px;
+                    }
+                    h1 {
+                        font-size:30px;
+                    }
+                    a {
+                        font-size: 29px;
+                        width: 210px;
+                        height: 70px;
+                    }
+                }
+            }
+        }
+        #home-cards {
+            .title {
+                h2 {
+                    font-size:33px;
+                }
+            }
+            .container-card {
+                justify-content: center;
+            }
+        }
+    }
+}
+
 @media (min-width:1200px) {
     #home {
         #banner {
@@ -315,6 +349,7 @@
             padding:15px;
             .arrow-left, .arrow-right {
                 display: flex;
+                cursor:pointer;
                 img {
                     width: 45px;
                 }
@@ -400,8 +435,8 @@
             .about-card {
                 flex-direction: row;
                 width:80%;
-                height: 450px;
-                margin-left: 115px;
+                height: 475px;
+               
                 img {
                     width:600px;
                 }

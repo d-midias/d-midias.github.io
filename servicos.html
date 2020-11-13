@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços</title>
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
+    
     <header id="header">
         <div class="logo">
 
             <a href="index.html">
                 <img src="assets/images/printer.svg"/>
             </a>
+            <span>D<span class="red">'</span>Mídias</span>
 
         </div>
 
-        <div class="open-menu">
-            <img src="assets/images/menu.svg" alt="menu-icone"/>
-        </div>
+        <button type="button" id="btn-open">
+            <img src="assets/images/menu.svg" alt="abrir menu"/>
+        </button>
 
-        <nav class="links">
+        <nav class="menu ">
+
+            <button type="button" id="btn-close" data-close="menu">
+                <img src="assets/images/close.svg" alt="close" />
+            </button>
+
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="servicos.html">SERVIÇOS</a></li>
@@ -58,7 +83,7 @@
                         <span>Uma grande empresa começa com um bom cartão.</span>
                         <span >A partir de:<span class="price">&nbsp;R$ 39,99</span></span>
 
-                        <a class="btn-green" href="cartao-de-visita.html">VEJA MAIS</a>
+                        <a class="btn-green" href="cartao-de-visita.html" aria-label="ir para pagina cartao de visita">VEJA MAIS</a>
                     </div>
 
             </div>
@@ -77,7 +102,7 @@
                     <span>Pode ser um café ou um chocolate quente, sua companheira especial e personalizada.</span>
                     <span >A partir de:<span class="price">&nbsp;R$ 14,99</span></span>
 
-                    <a class="btn-green" href="canecas.html">VEJA MAIS</a>
+                    <a class="btn-green" href="canecas.html" aria-label="ir para pagina de canecas">VEJA MAIS</a>
                 </div>
 
             
@@ -97,7 +122,7 @@
                     <span>Envie com uma embalagem personalizada e supreenda antes mesmo de abrir.</span>
                     <span >A partir de:<span class="price">&nbsp;R$ 4,99</span></span>
 
-                    <a class="btn-green" href="embalagens.html">VEJA MAIS</a>
+                    <a class="btn-green" href="embalagens.html" aria-label="ir para pagina de embalagens">VEJA MAIS</a>
                 </div>
 
                
@@ -117,7 +142,7 @@
                     <span>Com os nossos adesivos você literalmente deixa sua marca.</span>
                     <span >A partir de:<span class="price">&nbsp;R$ 1,99</span></span>
 
-                    <a class="btn-green" href="adesivos.html">VEJA MAIS</a>
+                    <a class="btn-green" href="adesivos.html" aria-label="ir para pagina de adesivos">VEJA MAIS</a>
                 </div>
 
                
@@ -157,11 +182,13 @@
 
         <span>2020 © D'Mídias. All rights reserved.</span>
 
-        <div class="btn-top">
+        <div class="btn-top" aria-label="voltar ao topo">
             <a href="#"><img src="assets/images/up-arrow.svg" alt="seta"/></a>
         </div>
 
     </footer>
+
+    <script type="text/javascript" src="/scripts/index.js"></script>
     
 </body>
 </html>
