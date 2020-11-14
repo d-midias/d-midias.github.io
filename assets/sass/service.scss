@@ -5,6 +5,7 @@
             flex-direction: column;
             padding: 15px;
             margin-top:15px;
+            align-items: center;
             .card {
                 .img-card {
                     img {
@@ -28,6 +29,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
+                
                 .card {
                     width: 300px;
                     margin: 15px;

@@ -1,5 +1,5 @@
 .card {
-    width: 100%;
+    width: 96%;
     background-color: var(--white);
     flex-direction: column;
     margin-bottom: 30px;
@@ -32,11 +32,12 @@
         }
         .btn-green {
             @include button-green;
-            height: 65px;
+            height: 55px;
             align-self: center;
             margin-bottom: 30px;
             font-size: 30px;
             margin-top:20px;
+            width: 175px;
         }
     }
    
